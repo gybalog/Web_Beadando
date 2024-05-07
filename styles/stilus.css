@@ -1,5 +1,5 @@
 /*NavBar*/
-  ul {
+  #nav-bar-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,11 +7,11 @@
     background-color: #333;
   }
   
-  li {
+  #nav-bar-li {
     float: left;
   }
   
-  li a {
+  #nav-bar-li a {
     display: block;
     color: white;
     text-align: center;
@@ -19,7 +19,7 @@
     text-decoration: none;
   }
   
-  li a:hover {
+  #nav-bar-li a:hover {
     background-color: #111;
   }
 /*Main*/

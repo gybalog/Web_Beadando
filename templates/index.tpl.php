@@ -16,10 +16,10 @@
     <div id="wrapper">
         <aside id="nav">
             <nav>
-                <ul>
+                <ul id="nav-bar-ul">
 					<?php foreach ($oldalak as $url => $oldal) { ?>
 						<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
-							<li id="nav-bar" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+							<li id="nav-bar-li" <?= (($oldal == $keres) ? ' class="active"' : '') ?>>
 							<a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
 							<?= $oldal['szoveg'] ?></a>
 							</li>
