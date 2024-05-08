@@ -19,19 +19,23 @@ exit("Hibás szöveg: ".$_POST['uzenet']);
 $isAllValid = false;
 }
 
-if ($isAllValid == true) {
+if ($isAllValid == true) {    
+    $datum2 = date("Y-m-d");
+    echo "Feltöltött adatok:<br>";
     echo "Nev: " . $_POST['nev'] . "<br>";
     echo "Email: " . $_POST['email'] . "<br>";
     echo "Üzenet: " . $_POST['uzenet'] . "<br>";
+    echo "Dátum: " . $datum2;
+    
 
     // Kapcsolódás
-    $dbh = new PDO('mysql:host=localhost;dbname=beadteszt', 'root', '',
+    $dbh = new PDO('mysql:host=localhost;dbname=beadteszt2', 'root', '',
     array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
     $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-    $sqlInsert = "insert into uzenetek(id, nev, email, uzenet) values(0, :nev, :email, :uzenet)";
+    $sqlInsert = "insert into uzenetek(id, nev, email, uzenet, datum) values(0, :nev, :email, :uzenet, :datum)";
             $stmt = $dbh->prepare($sqlInsert); 
-            $stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'], ':uzenet' => $_POST['uzenet'])); 
+            $stmt->execute(array(':nev' => $_POST['nev'], ':email' => $_POST['email'], ':uzenet' => $_POST['uzenet'],':datum' => $datum2)); 
 
 }
 
