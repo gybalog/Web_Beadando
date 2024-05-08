@@ -14,10 +14,11 @@ $lablec = array(
 
 $oldalak = array(
 	'/' => array('fajl' => 'cimlap', 'szoveg' => 'Címlap', 'menun' => array(1,1)),
-	'bemutatkozas' => array('fajl' => 'bemutatkozas', 'szoveg' => 'Bemutatkozás', 'menun' => array(1,1)),
-	'galeria' => array('fajl' => 'galeria', 'szoveg' => 'Galeria', 'menun' => array(1,1)),    
-	'feltolt' => array('fajl' => 'feltolt', 'szoveg' => 'Kép feltöltés', 'menun' => array(1,1)),
+	'galeria' => array('fajl' => 'galeria', 'szoveg' => 'Galeria', 'menun' => array(1,1)),
+    'uzenet' => array('fajl' => 'uzenet', 'szoveg' => 'Üzenet', 'menun' => array(1,1)),    
+    'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => '', 'menun' => array(0,0)),
     'tablazat' => array('fajl' => 'tablazat', 'szoveg' => 'Táblázat', 'menun' => array(1,1)),
+	'feltolt' => array('fajl' => 'feltolt', 'szoveg' => 'Kép feltöltés', 'menun' => array(0,1)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => 'Belépés', 'menun' => array(1,0)),
     'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
     'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
