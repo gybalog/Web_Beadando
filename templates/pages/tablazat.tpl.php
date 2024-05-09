@@ -20,10 +20,10 @@ class TableRows extends RecursiveIteratorIterator {
   }
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "beadteszt2";
+$servername = "mysql.omega:3306";
+$username = "bfzfk0";
+$password = "Almafa01";
+$dbname = "bfzfk0";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

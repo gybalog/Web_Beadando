@@ -29,9 +29,9 @@ if ($isAllValid == true) {
     
 
     // Kapcsolódás
-    $dbh = new PDO('mysql:host=localhost;dbname=beadteszt2', 'root', '',
-    array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-    $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
+    $dbh = new PDO('mysql:host=mysql.omega:3306;dbname=bfzfk0', 'bfzfk0', 'Almafa01',
+                        array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+        $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
     $sqlInsert = "insert into uzenetek(id, nev, email, uzenet, datum) values(0, :nev, :email, :uzenet, :datum)";
             $stmt = $dbh->prepare($sqlInsert); 

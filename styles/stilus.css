@@ -20,7 +20,7 @@
   }
   
   #nav-bar-li a:hover {
-    background-color: rgb(9, 28, 78);
+    background-color: rgb(41, 102, 255);
   }
 /*Main*/
 h1{
@@ -33,7 +33,7 @@ h1{
   }
 
 body {
-    background-color: rgb(9, 28, 78);
+    background-color: rgb(41, 102, 255);
 }
 /*Képek*/
 div#galeria {margin: 0 auto; width: 90%;}
