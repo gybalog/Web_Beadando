@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #000000;
   }
   
   #nav-bar-li {
@@ -20,18 +20,34 @@
   }
   
   #nav-bar-li a:hover {
-    background-color: #111;
+    background-color: rgb(9, 28, 78);
   }
 /*Main*/
+h1{
+  color: white;
+  text-decoration: double;
+}
   #wrapper {
     padding: 10px;
-    background-color: lightslategray;
+    background-color: rgb(151, 151, 151);
   }
 
 body {
-    background-color: deepskyblue;
+    background-color: rgb(9, 28, 78);
 }
 /*Képek*/
 div#galeria {margin: 0 auto; width: 90%;}
 div.kep { display: inline-block; }
-div.kep img { width: 300px; }
+div.kep img { height: 200px; }
+/*Táblázat*/
+table{
+  width: 100%;
+}
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th,td {
+  padding: 5px;
+}

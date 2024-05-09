@@ -1,0 +1,2 @@
+<p id="demo">A Hungaroring Magyarország legjelentősebb autóverseny-pályája. Budapest és Gödöllő között, az M3-as autópálya közelében található, Mogyoród külterületén (ennek ellenére a nemzetközi sajtóban gyakran budapesti pályaként kommunikálják). A sztrádától a 21 102-es számú mellékúton érhető el.
+A pálya elsősorban a Formula–1 magyar nagydíjról ismert, amit 1986 óta folyamatosan megrendeznek.</p>

@@ -142,4 +142,3 @@ function ellenoriz() {
     }
     return rendben;
     }
-    
